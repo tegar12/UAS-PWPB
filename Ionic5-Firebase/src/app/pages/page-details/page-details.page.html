@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>name</ion-label>
+    <ion-input name="task" [(ngModel)]="todo.task"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>priority</ion-label>
+    <ion-input name="priority" [(ngModel)]="todo.priority"></ion-input>
+  </ion-item>
+    <ion-button color="primary" (click)="editing ? updateTask():addTask()">
+      save
+    </ion-button>
+</ion-content>
